@@ -1,0 +1,21 @@
+.search__button{
+    color:  #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; 
+    letter-spacing: 0.3px;
+    border-radius: 4px;
+    background:  #0D7AD9;
+    border: none;
+    width: 113px;
+    box-sizing: border-box;
+    height: 44px;
+    align-self: flex-end;
+}
+
+.search__button:hover{
+    cursor: pointer;
+}

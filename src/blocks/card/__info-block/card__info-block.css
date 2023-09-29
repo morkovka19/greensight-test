@@ -1,0 +1,7 @@
+.card__info-block{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: calc(48/1200*100%);
+    width: 100%;
+}

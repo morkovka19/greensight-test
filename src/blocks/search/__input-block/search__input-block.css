@@ -1,0 +1,7 @@
+.search__input-block{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: calc(265.5/547*100%);
+}

@@ -1,0 +1,10 @@
+.footer__adress-text{
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; 
+    margin: 0;
+    padding: 0;
+}

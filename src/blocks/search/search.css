@@ -1,0 +1,7 @@
+.search{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: calc(692/1200*100%)
+}

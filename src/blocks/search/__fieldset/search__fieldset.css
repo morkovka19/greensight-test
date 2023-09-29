@@ -1,0 +1,8 @@
+.search__fieldset{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+    border: none;
+    width: calc(547/692*100%)
+}

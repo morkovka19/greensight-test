@@ -1,9 +1,14 @@
 import { url } from "../constants";
 
 class Api{
-    getVacancies = () =>{
-        return fetch(url).then((res => this._getResponseDate(res)));
-    }
+    getVacancies(){
+        return fetch(url).then((res) => this._getResponseDate(res));
+    };
+
+        
+    getVacancy({idCard}){
+        return fetch(`${url}/${idCard}`).then((res) => this._getResponseDate(res))
+    };
 
    _getResponseDate(res){
         if (!res.ok) {
