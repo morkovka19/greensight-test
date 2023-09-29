@@ -1,7 +1,6 @@
 export default function Card({card}){
     return (
         <li className="card">
-            {console.log(card)}
             <div className="card__title-block">
                 <h2 className="card__title">{card.name}</h2>
                 <img className={`card__img ${!card?.employer?.logo_urls?.original ? "card__img_unvisible" : null}`} src={card?.employer?.logo_urls?.original} alt={card?.employer?.name}/>
