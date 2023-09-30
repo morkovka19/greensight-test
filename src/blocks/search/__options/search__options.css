@@ -1,0 +1,12 @@
+.search__options{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 78px;
+    background-color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.10);
+    z-index: 2;
+}
+

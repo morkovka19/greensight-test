@@ -1,5 +1,5 @@
 .search__select_no-selected{
-    color:  #ACB3B9;
+    color: var(--grey600, #ACB3B9);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;

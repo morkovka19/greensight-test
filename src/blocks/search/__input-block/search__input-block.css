@@ -4,4 +4,6 @@
     margin: 0;
     padding: 0;
     width: calc(265.5/547*100%);
+    position: relative;
+    gap: 4px;
 }

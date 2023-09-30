@@ -8,4 +8,5 @@
     min-width: 100vh;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }

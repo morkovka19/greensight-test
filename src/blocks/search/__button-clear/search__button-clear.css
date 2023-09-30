@@ -1,0 +1,15 @@
+.search__button-clear{
+    position: absolute;
+    display: none;
+    color: var(--blue, #0D7AD9);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    top: 245px;
+    border: none;
+    background: none;
+    flex-direction: row;
+    gap: 4px
+}
