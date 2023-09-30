@@ -36,3 +36,12 @@
 @import url(./blocks/search/__icon/_rotate/search__icon_rotetae.css);
 @import url(./blocks/search/__button-clear/search__button-clear.css);
 @import url(./blocks/search/__button-clear/_visible/search__button-clear_visible.css);
+@import url(./blocks/card/__button-more/card__button-more.css);
+@import url(./blocks/card/__icon/card__icon.css);
+@import url(./blocks/card/__paragragh/card__paragragh.css);
+@import url(./blocks/card/__bottom/card__bottom.css);
+@import url(./blocks/card/__bottom/_unvisible/card__bottom_unvisible.css);
+@import url(./blocks/card/__text/_big/card__text_big.css);
+@import url(./blocks/card/__icon/_rotate/card__icon_rotate.css);
+@import url(./blocks/card/__text-title/card__text-title.css);
+@import url(./blocks/card/_big/card_big.css);

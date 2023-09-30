@@ -9,5 +9,5 @@
     align-items: flex-start;
     gap: 32px;
     box-sizing: border-box;
-    
+    /*max-height: 436px;*/
 }

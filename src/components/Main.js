@@ -4,15 +4,15 @@ import Card from "./Card";
 import { useEffect, useState } from "react";
 
 export default function Main({vacancies}){
-
     const [countCards, setCountCards] = useState(5);
-    const cards = vacancies;
-    const [activeCards, setActiveCards] = useState(cards);
+    const [activeCards, setActiveCards] = useState(vacancies);
+
+    useEffect(() =>{
+        setActiveCards(vacancies);
+    }, [vacancies])
     
-
-
     const handleClickShowMore = () =>{
-        if (activeCards.length - 5 <= 0){
+        if (activeCards.length - countCards <= 0){
             setCountCards(activeCards.length);
         }
         else{
@@ -20,9 +20,8 @@ export default function Main({vacancies}){
         }
     }
 
-    const handleSearch = ({form, position}) =>{
-        console.log({form, position});
-        const activeCardsFilter = cards.filter((item) =>{
+    function handleSearch ({form, position}){
+        let activeCardsFilter = [...vacancies].filter((item) =>{
             if (form !== 'No selected' || position !== 'No selected'){
                 if (position === 'No selected'){
                 return item.employment?.name === form && item;
@@ -35,9 +34,8 @@ export default function Main({vacancies}){
                 return item;
             }
         });
-        console.log(activeCardsFilter)
         setActiveCards(activeCardsFilter);
-        console.log(activeCards);
+        setCountCards(5);
     }
 
 
@@ -51,7 +49,7 @@ export default function Main({vacancies}){
                     (i < countCards) ? <Card card={item} key ={i} />  : null)
                 )}
             </ul>
-            <button type="button" className={`main__button  ${countCards === activeCards.length || activeCards.length === 0 ? "main__button_unvisible" : null}`} onClick={handleClickShowMore}>Show more</button>
+            <button type="button" className={`main__button  ${countCards === activeCards.length  || activeCards.length === 0 ? "main__button_unvisible" : null}`} onClick={handleClickShowMore}>Show more</button>
         </main>
     )
 }
