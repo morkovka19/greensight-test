@@ -1,4 +1,4 @@
-.search__input-block{
+.search__input-block {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -6,4 +6,10 @@
     width: calc(265.5/547*100%);
     position: relative;
     gap: 4px;
+}
+
+@media screen and (max-width: 990px){
+    .search__input-block{
+        width: 100%;
+    }
 }

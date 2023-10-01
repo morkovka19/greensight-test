@@ -14,14 +14,9 @@ function App() {
     }).catch(e => console.log(e));
   });
 
-  const getVacancy =({idCard})=>{
-    api.getVacancy({idCard}).then(res => res).catch(e => console.log(e))
-  }
-
-
   return (
     <div className='page__content'>
-      <Main vacancies={vacancies} getVacancy={getVacancy}/>
+      <Main vacancies={vacancies} />
       <Footer />
     </div>
   );

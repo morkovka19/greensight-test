@@ -1,7 +1,14 @@
-.footer__adresses{
+.footer__adresses {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     gap: 8px;
+}
+
+@media screen and (max-width: 990px){
+    .footer__adresses{
+        width: 100%;
+        align-items: flex-start;
+    }
 }

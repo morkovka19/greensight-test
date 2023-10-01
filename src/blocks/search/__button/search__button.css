@@ -19,3 +19,15 @@
 .search__button:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 990px){
+    .search__button{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .search__button{
+        width: 100%;
+    }
+}

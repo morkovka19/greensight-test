@@ -1,4 +1,4 @@
-.card{
+.card {
     border-radius: 16px;
     background: #FFF;
     box-shadow: 0px 0px 16px 0px rgba(30, 30, 30, 0.10);
@@ -9,5 +9,13 @@
     align-items: flex-start;
     gap: 32px;
     box-sizing: border-box;
-    /*max-height: 436px;*/
+    max-height: 436px;
+}
+
+@media screen and (max-width: 990px){
+    .card{
+        padding: 20px;
+        gap: 0;
+        max-height: 610px;
+    }
 }

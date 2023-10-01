@@ -1,4 +1,4 @@
-.card__title{
+.card__title {
     color:  #131313;
     font-family: Roboto;
     font-size: 24px;
@@ -11,4 +11,19 @@
     text-align: center;
     align-items: center;
     display: flex;
+}
+
+@media screen and (max-width: 990px){
+    .card__title{
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.2px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .card__title{
+        align-self: flex-start;
+        text-align: start;
+    }
 }

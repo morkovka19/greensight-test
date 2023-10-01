@@ -5,11 +5,6 @@ class Api{
         return fetch(url).then((res) => this._getResponseDate(res));
     };
 
-        
-    getVacancy({idCard}){
-        return fetch(`${url}/${idCard}`).then((res) => this._getResponseDate(res))
-    };
-
    _getResponseDate(res){
         if (!res.ok) {
           return Promise.reject(`Ошибка: ${res.status}`);
@@ -17,7 +12,6 @@ class Api{
         return res.json();
       }
 }
-
 
 const api = new Api();
 export default api;

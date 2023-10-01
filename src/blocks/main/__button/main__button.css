@@ -1,4 +1,4 @@
-.main__button{
+.main__button {
     color:  #FFF;
     text-align: center;
     font-family: Roboto;
@@ -17,6 +17,19 @@
     margin: 84px 0  0;
 }
 
-.main__button:hover{
+.main__button:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 990px){
+    .main__button{
+        align-self: center;
+        margin: 32px 0 0;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .main__button{
+        width: 100%;
+    }
 }

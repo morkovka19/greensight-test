@@ -9,7 +9,7 @@ export default function Main({vacancies}){
 
     useEffect(() =>{
         setActiveCards(vacancies);
-    }, [vacancies])
+    }, [vacancies]);
     
     const handleClickShowMore = () =>{
         if (activeCards.length - countCards <= 0){
@@ -18,11 +18,11 @@ export default function Main({vacancies}){
         else{
             setCountCards(countCards + 5);
         }
-    }
+    };
 
-    function handleSearch ({form, position}){
+    const handleSearch = ({form, position}) => {
         let activeCardsFilter = [...vacancies].filter((item) =>{
-            if (form !== 'No selected' || position !== 'No selected'){
+            if (form !== 'Not selected' || position !== 'Not selected'){
                 if (position === 'No selected'){
                 return item.employment?.name === form && item;
                 } else if (form === 'No selected'){
@@ -36,11 +36,9 @@ export default function Main({vacancies}){
         });
         setActiveCards(activeCardsFilter);
         setCountCards(5);
-    }
+    };
 
-
-
-    return(
+    return (
         <main className="main">
             <h1 className="main__title">List of vacancies</h1>
             <Search onSearch={handleSearch}/>

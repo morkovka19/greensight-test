@@ -1,5 +1,5 @@
-.footer__adress-text{
-    color: var(--white, #FFF);
+.footer__adress-text {
+    color: #FFF;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -7,4 +7,12 @@
     line-height: 145%; 
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 990px){
+    .footer__adress-text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%;
+    }
 }

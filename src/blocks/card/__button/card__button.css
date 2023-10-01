@@ -7,7 +7,7 @@
     gap: 8px;
     border-radius: 4px;
     background:  #383838;
-    color: var(--white, #FFF);
+    color:  #FFF;
     font-family: Roboto;
     font-size: 15px;
     font-style: normal;
@@ -21,4 +21,17 @@
 
 .card__button:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 990px){
+    .card__button{
+        margin: 24px 0;
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .card__button{
+        width: 100%;
+    }
 }

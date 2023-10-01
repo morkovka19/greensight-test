@@ -1,4 +1,4 @@
-.search__option{
+.search__option {
     display: flex;
     height: 40px;
     padding: 8px 12px;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.search__option:hover{
+.search__option:hover {
     background:  #0D7AD9;
     color: #FFF;
     cursor: pointer;

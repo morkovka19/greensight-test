@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ArrorIcon from '../images/chevronDownBlue.svg';
+import { reg } from '../constants';
 
 export default function Card({card}){
 
@@ -24,8 +25,8 @@ export default function Card({card}){
             <h3 className='card__text-title'>Требования</h3>
             <ul className={`card__text ${moreDitails ? 'card__text_big' : null}`}>
                 {
-                    card?.snippet?.requirement.split('. ').map((text, i) => (
-                        <li className='card__paaragragh' key={i}>{text}</li>
+                    card?.snippet?.requirement.split(reg).map((text, i) => (
+                        text !== '' && <li className='card__paaragragh' key={i}>{text}</li>
                     ))
                 }
                 <div className={`card__bottom  ${moreDitails ? 'card__bottom_unvisible' : null}`}></div>
