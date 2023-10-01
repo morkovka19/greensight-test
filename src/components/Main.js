@@ -20,12 +20,12 @@ export default function Main({vacancies}){
         }
     };
 
-    const handleSearch = ({form, position}) => {
+    function  handleSearch ({form, position}) {
         let activeCardsFilter = [...vacancies].filter((item) =>{
             if (form !== 'Not selected' || position !== 'Not selected'){
-                if (position === 'No selected'){
+                if (position === 'Not selected'){
                 return item.employment?.name === form && item;
-                } else if (form === 'No selected'){
+                } else if (form === 'Not selected'){
                     return item.area?.name === position && item;
                 } else{
                     return (item.area?.name === position && item.employment?.name === form) ? item : null;
