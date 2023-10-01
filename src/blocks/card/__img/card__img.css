@@ -7,7 +7,7 @@
     align-self: center;
     margin-left: 17px;
     align-self: center;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 990px){
@@ -15,6 +15,7 @@
         margin: 0 auto;
         width: 248px;
         order: -1;
+        object-fit: contain;
     }
 }
 
